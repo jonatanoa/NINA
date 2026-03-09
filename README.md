@@ -3,169 +3,59 @@
 ## 📁 Estructura del Proyecto
 
 ```
-nina-centro-educativo/
+NINA V10/
 │
-├── index.html              ← Página principal
+├── index.html                  ← Página principal (única)
 │
 ├── css/
-│   ├── variables.css       ← Variables CSS, estilos base, parallax, partículas
-│   ├── nav.css             ← Navegación (desktop + mobile)
-│   ├── hero.css            ← Sección hero, slider de imágenes, botones
-│   ├── sections.css        ← Nosotros, Programas, Galería, Testimonios, Mapa,
-│   │                          Contacto, WhatsApp, Footer, Lightbox
-│   ├── games.css           ← Todos los juegos (Memoria, Atrapa, Cohete, Simón)
-│   └── responsive.css      ← Media queries (1024px, 900px, 480px, 360px)
+│   ├── variables.css           ← Variables, estilos base, fondo por sección
+│   ├── nav.css                 ← Navegación desktop + mobile
+│   ├── hero.css                ← Sección hero y slider de imágenes
+│   ├── sections.css            ← Nosotros, Programas, Galería, Testimonios,
+│   │                              Ubicación, Contacto, WhatsApp, Footer, Lightbox
+│   ├── games.css               ← Juegos: Memoria, Atrapa, Cohete, Simón
+│   └── responsive.css          ← Media queries (1024px, 900px, 480px, 360px)
 │
 ├── js/
-│   ├── main.js             ← Nav, Parallax, Partículas, Scroll Reveal,
-│   │                          Typing animation, Burbujas, Smooth scroll
-│   ├── slider.js           ← Hero slider + Slider de testimonios
-│   ├── contact.js          ← Formulario de contacto con EmailJS
-│   ├── lightbox.js         ← Visor de imágenes de galería
+│   ├── main.js                 ← Nav, Scroll Reveal, Typing, Fondo por sección,
+│   │                              Smooth scroll, Videos
+│   ├── slider.js               ← Hero slider + Slider de testimonios
+│   ├── contact.js              ← Formulario de contacto con EmailJS
+│   ├── lightbox.js             ← Visor de imágenes y videos
 │   │
 │   └── games/
-│       ├── manager.js      ← Gestor de juegos: openGame, closeGame,
-│       │                      switchGameTab, overlay compartido
-│       ├── memory.js       ← Juego de Memoria
-│       ├── catch.js        ← Juego Atrapa la Fruta
-│       ├── rocket.js       ← Juego Matemáticas Cohete
-│       └── simon.js        ← Juego Secuencias (Simon)
+│       ├── manager.js          ← Gestor de juegos: modal, apertura y cierre
+│       ├── memory.js           ← Juego de Memoria
+│       ├── catch.js            ← Juego Atrapa la Fruta
+│       ├── rocket.js           ← Juego Matemáticas Cohete
+│       └── simon.js            ← Juego Secuencias (Simón)
 │
 └── img/
-    ├── logo.png            ← Logo del centro (nav y footer)
-    ├── videos/             ← Coloca aquí: video1.mp4 ... video5.mp4
-    ├── hero/               ← Fotos del slider principal (hero1.jpg ... hero10.jpg)
-    ├── galeria/            ← Fotos de la galería (galeria1.jpg ... galeria8.jpg)
-    └── testimonios/        ← Fotos de perfil (testimonio1.jpg ... testimonio4.jpg)
+    ├── logo.png                ← Logo del centro (nav y footer)
+    ├── hero/                   ← hero1.png, hero2.jpg … hero9.jpg
+    ├── galeria/                ← galeria1.jpg … galeria12.jpg
+    ├── testimonios/            ← testimonios1.jpg … testimonios4.jpg/.png
+    └── videos/                 ← video1.mp4 … video5.mp4
 ```
-
----
-
-## 🖼️ Cómo reemplazar las imágenes por archivos locales
-
-Actualmente las imágenes se cargan desde internet (imgbb.com).
-Para usar imágenes guardadas en tu computador, sigue estos pasos:
-
-### Paso 1 — Crea las carpetas
-
-Dentro de `nina-centro-educativo/`, crea esta estructura de carpetas:
-
-```
-img/
-├── logo.png
-├── hero/
-│   ├── hero1.jpg  →  hero2.jpg  →  ...  →  hero10.jpg
-├── galeria/
-│   ├── galeria1.jpg  →  galeria2.jpg  →  ...  →  galeria8.jpg
-├── testimonios/
-│   ├── testimonio1.jpg  →  testimonio2.jpg  →  testimonio3.jpg  →  testimonio4.jpg
-└── videos/
-    ├── video1.mp4  →  video2.mp4  →  ...  →  video5.mp4
-```
-
-### Paso 2 — Reemplaza las rutas en index.html
-
-Abre `index.html` con un editor de texto (VS Code, Notepad++, etc.)
-y usa **Buscar y Reemplazar** (Ctrl+H) para cambiar cada URL.
-
----
-
-### 🔷 LOGO — aparece 2 veces (nav y footer)
-
-Busca esta URL (las 2 veces):
-```
-https://i.ibb.co/5gFFrnw1/Adobe-Express-file.png
-```
-Reemplaza por:
-```
-img/logo.png
-```
-
----
-
-### 🔷 HERO SLIDER — 10 fotos del slider principal
-
-| # | URL actual (busca esto) | Reemplaza por |
-|---|------------------------|---------------|
-| 1 | `https://i.ibb.co/BhFtD65/Picsart-26-02-26-09-40-37-910.png` | `img/hero/hero1.jpg` |
-| 2 | `https://i.ibb.co/TDjRLtXt/IMG-20260225-WA0071.jpg` | `img/hero/hero2.jpg` |
-| 3 | `https://i.ibb.co/B252sz5N/IMG-20260225-WA0052.jpg` | `img/hero/hero3.jpg` |
-| 4 | `https://i.ibb.co/mrMKjYpc/IMG-20260225-WA0050.jpg` | `img/hero/hero4.jpg` |
-| 5 | `https://i.ibb.co/GvrJJSZ3/IMG-20260225-WA0049.jpg` | `img/hero/hero5.jpg` |
-| 6 | `https://i.ibb.co/R4C2QBc9/IMG-20260224-WA0053.jpg` | `img/hero/hero6.jpg` |
-| 7 | `https://i.ibb.co/d460C2xs/IMG-20260224-WA0049.jpg` | `img/hero/hero7.jpg` |
-| 8 | `https://i.ibb.co/ZpjCH3sn/IMG-20260224-WA0041.jpg` | `img/hero/hero8.jpg` |
-| 9 | `https://i.ibb.co/hNw9dkc/IMG-20260224-WA0040.jpg` | `img/hero/hero9.jpg` |
-| 10 | `https://i.ibb.co/4n92grdw/IMG-20260224-WA0035.jpg` | `img/hero/hero10.jpg` |
-
----
-
-### 🔷 GALERÍA — 8 fotos
-
-| # | URL actual (busca esto) | Reemplaza por |
-|---|------------------------|---------------|
-| 1 | `https://i.ibb.co/HDBbNDkF/IMG-20260225-WA0057.jpg` | `img/galeria/galeria1.jpg` |
-| 2 | `https://i.ibb.co/zWTnnZ4X/IMG-20260224-WA0039.jpg` | `img/galeria/galeria2.jpg` |
-| 3 | `https://i.ibb.co/Bmm2g93/IMG-20260224-WA0038.jpg` | `img/galeria/galeria3.jpg` |
-| 4 | `https://i.ibb.co/b52FFP86/IMG-20260225-WA0032.jpg` | `img/galeria/galeria4.jpg` |
-| 5 | `https://i.ibb.co/39PrCBSQ/IMG-20260224-WA0057.jpg` | `img/galeria/galeria5.jpg` |
-| 6 | `https://i.ibb.co/rCvKJR8/IMG-20260224-WA0033.jpg` | `img/galeria/galeria6.jpg` |
-| 7 | `https://i.ibb.co/wrLvqcZn/IMG-20260225-WA0034.jpg` | `img/galeria/galeria7.jpg` |
-| 8 | `https://i.ibb.co/3mFGpwgS/IMG-20260224-WA0054.jpg` | `img/galeria/galeria8.jpg` |
-
----
-
-### 🔷 TESTIMONIOS — 4 fotos de perfil
-
-| Testimonio | URL actual (busca esto) | Reemplaza por |
-|-----------|------------------------|---------------|
-| Cristian & Laura | `https://i.ibb.co/7J8QL2Bx/Picsart-26-02-27-11-15-02-452.png` | `img/testimonios/testimonio1.jpg` |
-| Cristian & Yuri  | `https://i.ibb.co/dJ7hWB6L/Picsart-26-03-03-09-58-08-652.png` | `img/testimonios/testimonio2.jpg` |
-| Stefany & Mateo  | `https://i.ibb.co/dYpnh9k`                                      | `img/testimonios/testimonio3.jpg` |
-| Angie Viviana    | `https://i.ibb.co/C5PHydqh/file-0000000064f471f5b4590f8063ed8719.png` | `img/testimonios/testimonio4.jpg` |
-
----
-
-### 🔷 VIDEOS DE GALERÍA — 5 videos
-
-Coloca tus archivos en `img/videos/` con estos nombres exactos:
-
-| Video | Nombre del archivo |
-|-------|--------------------|
-| Video 1 | `video1.mp4` |
-| Video 2 | `video2.mp4` |
-| Video 3 | `video3.mp4` |
-| Video 4 | `video4.mp4` |
-| Video 5 | `video5.mp4` |
-
-> Los videos ya están configurados en el código.
-> Solo necesitas colocar los archivos con esos nombres exactos en `img/videos/`.
-
----
-
-### ✅ Verificación final
-
-Después de hacer los cambios, abre `index.html` en tu navegador y revisa
-que todas las imágenes y videos carguen correctamente.
-
-> ⚠️ **Nota:** Si abres el archivo directamente desde el disco y los videos
-> no cargan, usa la extensión **Live Server** en VS Code, o sube el proyecto
-> a tu hosting (Netlify, etc.).
 
 ---
 
 ## ⚙️ Configuración
 
 ### EmailJS (formulario de contacto)
-En `index.html`:
-```js
-emailjs.init({ publicKey: "_v6kOtYesapmy5fTe" });
-```
-En `js/contact.js`:
-```js
-emailjs.send('service_j289d5s', 'template_afwmo49', templateParams)
-```
-Cambia los IDs si actualizas tu cuenta de EmailJS.
+
+El formulario usa EmailJS. Las claves ya están configuradas en el proyecto:
+
+- **`index.html`** — inicialización:
+  ```js
+  emailjs.init({ publicKey: "_v6kOtYesapmy5fTe" });
+  ```
+- **`js/contact.js`** — envío:
+  ```js
+  emailjs.send('service_j289d5s', 'template_afwmo49', templateParams)
+  ```
+
+> Si cambias de cuenta de EmailJS, actualiza esos dos IDs.
 
 ---
 
@@ -174,9 +64,10 @@ Cambia los IDs si actualizas tu cuenta de EmailJS.
 | Qué quieres cambiar | Archivo a editar |
 |---|---|
 | Colores / fuentes globales | `css/variables.css` |
+| Colores de fondo por sección | `js/main.js` → objeto `sectionColors` |
 | Menú de navegación | `css/nav.css` + `index.html` |
 | Hero / slider de fotos | `css/hero.css` + `index.html` |
-| Textos de secciones | `index.html` |
+| Textos de cualquier sección | `index.html` |
 | Estilos de secciones | `css/sections.css` |
 | Estilos de juegos | `css/games.css` |
 | Lógica juego Memoria | `js/games/memory.js` |
@@ -188,11 +79,36 @@ Cambia los IDs si actualizas tu cuenta de EmailJS.
 
 ---
 
+## 🎨 Colores de fondo por sección
+
+El fondo cambia de color suavemente al hacer scroll. Para modificarlos, edita el objeto `sectionColors` en `js/main.js`:
+
+```js
+const sectionColors = {
+    'inicio':      '#FFB3D1',   // rosa
+    'nosotros':    '#FFD49A',   // durazno
+    'programas':   '#A8EDCC',   // menta
+    'galeria':     '#C9B8FF',   // lavanda
+    'testimonios': '#FFB89A',   // coral
+    'ubicacion':   '#A8D8FF',   // celeste
+    'contacto':    '#D8B8FF',   // violeta
+    'juego':       '#FFE680',   // amarillo
+};
+```
+
+---
+
+## 🗺️ SEO y Datos del Negocio
+
+Los datos del centro están en el `<head>` de `index.html` en el bloque `application/ld+json`. Si cambia algún dato (dirección, teléfono, horario), actualízalo ahí también.
+
+---
+
 ## 📱 Compatibilidad
 
-- ✅ Chrome, Firefox, Safari, Edge (modernos)
-- ✅ Móvil y tablet
-- ✅ Touch controls en juegos
+- ✅ Chrome, Firefox, Safari, Edge (versiones modernas)
+- ✅ Escritorio, tablet y móvil
+- ✅ Touch en juegos y galería
 
 ---
 
