@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+    --primary: #FF6B9D;
+    --secondary: #4ECDC4;
+    --accent: #FFE66D;
+    --purple: #9B5DE5;
+    --orange: #FF9F1C;
+    --blue: #00BBF9;
+    --green: #9EF01A;
+    --dark: #2D3436;
+    --light: #FFF5F7;
+    --glass-bg: rgba(255, 255, 255, 0.15);
+    --glass-border: rgba(255, 255, 255, 0.25);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #FFB3D1;   /* color inicial — JS lo cambia por sección */
+    transition: background-color 0.85s ease;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+

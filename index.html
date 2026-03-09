@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="apple-touch-icon" href="img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== SEO META TAGS ===== -->
+    <meta name="description" content="Centro de Estimulación y Aprendizaje NINA en Puerto Triunfo, Antioquia. Estimulación temprana, desarrollo infantil y aprendizaje lúdico para niños de 0 a 12 años. ¡Inscripciones abiertas!">
+    <meta name="keywords" content="estimulación temprana, centro educativo infantil, desarrollo infantil, aprendizaje lúdico, jardín infantil, Puerto Triunfo, Antioquia, Colombia, estimulación y aprendizaje, centro NINA">
+    <meta name="author" content="Centro de Estimulación y Aprendizaje NINA">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FF6B9D">
+    <link rel="canonical" href="https://centronina.com/">
+
+    <!-- ===== OPEN GRAPH (Facebook, WhatsApp, LinkedIn) ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://centronina.com/">
+    <meta property="og:title" content="Centro de Estimulación y Aprendizaje NINA">
+    <meta property="og:description" content="Estimulación temprana y aprendizaje lúdico para niños de 0 a 12 años en Puerto Triunfo, Antioquia. Un lugar donde cada niño se siente valorado y acompañado.">
+    <meta property="og:image" content="https://centronina.com/img/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Centro NINA">
+
+    <!-- ===== SCHEMA.ORG — LOCAL BUSINESS + EDUCATIONAL ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["ChildCare", "EducationalOrganization", "LocalBusiness"],
+      "name": "Centro de Estimulación y Aprendizaje NINA",
+      "alternateName": "Centro NINA",
+      "description": "Centro de estimulación temprana y aprendizaje lúdico para niños de 0 a 12 años en Puerto Triunfo, Antioquia, Colombia.",
+      "url": "https://centronina.com/",
+      "logo": "https://centronina.com/img/logo.png",
+      "image": "https://centronina.com/img/logo.png",
+      "telephone": "+573206398235",
+      "email": "centroestimulacionnina@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carrera 15a # 10-11 Barrio Obrero",
+        "addressLocality": "Puerto Triunfo",
+        "addressRegion": "Antioquia",
+        "addressCountry": "CO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 5.8752,
+        "longitude": -74.5627
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "08:00",
+          "closes": "11:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "12:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "13:00"
+        }
+      ],
+      "priceRange": "$$",
+      "sameAs": [
+        "https://wa.me/573206398235"
+      ]
+    }
+    </script>
+
+    <title>Centro de Estimulación y Aprendizaje NINA - Donde el Aprendizaje es una Aventura</title>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('load', function () {
+            emailjs.init({ publicKey: "_v6kOtYesapmy5fTe" });
+        });
+    </script>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/games.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Fondo: CSS puro en body::before / body::after — sin DOM nodes -->
+
+
+    <!-- ===== NAV ===== -->
+    <nav id="mainNav">
+        <div class="nav-container">
+            <div class="logo">
+                <img class="img-logo" src="img/logo.png" alt="Logo Centro de Estimulación y Aprendizaje NINA">
+                <span class="logo-text">Centro de Estimulación y Aprendizaje</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú de navegación">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio"      onclick="closeMenu()"><span class="nav-emoji">🏠</span> Inicio</a></li>
+                <li><a href="#nosotros"    onclick="closeMenu()"><span class="nav-emoji">✨</span> Nosotros</a></li>
+                <li><a href="#programas"   onclick="closeMenu()"><span class="nav-emoji">🌱</span> Programas</a></li>
+                <li><a href="#galeria"     onclick="closeMenu()"><span class="nav-emoji">🖼️</span> Galería</a></li>
+                <li><a href="#testimonios" onclick="closeMenu()"><span class="nav-emoji">💬</span> Testimonios</a></li>
+                <li><a href="#ubicacion"   onclick="closeMenu()"><span class="nav-emoji">📍</span> Ubicación</a></li>
+                <li><a href="#contacto"    onclick="closeMenu()"><span class="nav-emoji">📧</span> Contacto</a></li>
+                <li><a href="#juego"       onclick="closeMenu()"><span class="nav-emoji">🎮</span> Juego</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1><span class="typing-container"><span class="typing-text" id="typingText"></span></span></h1>
+                <p>En el Centro de Estimulación y Aprendizaje <span class="nina-colored"><span style="color:#F7921E">N</span><span style="color:#9B5DE5">I</span><span style="color:#FF3EA0">N</span><span style="color:#8CE820">A</span></span>, transformamos el aprendizaje en una aventura mágica. Descubre un mundo donde cada niño brilla con luz propia.</p>
+                <div class="hero-buttons">
+                    <a href="#programas" class="btn btn-primary">🚀 Explorar Programas</a>
+                    <a href="#contacto"  class="btn btn-secondary">📧 Contáctanos</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="sparkle" style="top:-10px; left:-10px; z-index:10;"></div>
+                <div class="sparkle" style="top:-10px; right:-10px; animation-delay:0.5s; z-index:10;"></div>
+                <div class="sparkle" style="bottom:-10px; left:30%; animation-delay:1s; z-index:10;"></div>
+                <div class="hero-slider" id="heroSlider">
+                    <div class="hero-slide active"><img src="img/hero/hero1.png" alt="Actividades lúdicas en el Centro de Estimulación y Aprendizaje NINA"></div>
+                    <div class="hero-slide"><img src="img/hero/hero2.jpg" alt="Niños aprendiendo y explorando en Centro NINA Puerto Triunfo"></div>
+                    <div class="hero-slide"><img src="img/hero/hero3.jpg" alt="Estimulación temprana para niños en Centro NINA Antioquia"></div>
+                    <div class="hero-slide"><img src="img/hero/hero4.jpg" alt="Desarrollo infantil y aprendizaje en Centro NINA"></div>
+                    <div class="hero-slide"><img src="img/hero/hero5.jpg" alt="Actividades educativas para niños en Puerto Triunfo Antioquia"></div>
+                    <div class="hero-slide"><img src="img/hero/hero6.jpg" alt="Centro de Estimulación NINA - Aprendizaje jugando"></div>
+                    <div class="hero-slide"><img src="img/hero/hero7.jpg" alt="Niños en actividades sensoriales y psicomotoras NINA"></div>
+                    <div class="hero-slide"><img src="img/hero/hero8.jpg" alt="Estimulación y desarrollo infantil Centro NINA Colombia"></div>
+                    <div class="hero-slide"><img src="img/hero/hero9.jpg" alt="Actividades creativas para niños Centro de Estimulación NINA Puerto Triunfo"></div>
+                    <button class="hero-arrow hero-arrow-prev" id="heroPrev">‹</button>
+                    <button class="hero-arrow hero-arrow-next" id="heroNext">›</button>
+                    <div class="hero-dots" id="heroDots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NOSOTROS ===== -->
+    <section id="nosotros">
+        <h2 class="section-title reveal">✨ Nuestro Mundo Mágico</h2>
+        <div class="cards-container">
+            <div class="card reveal"><div class="card-icon">🎨</div><h3>Primera Infancia</h3><p>Exploración sensorial y vínculos familiares fuertes. Desarrollamos habilidades motoras y emocionales mediante experiencias significativas.</p></div>
+            <div class="card reveal"><div class="card-icon">📚</div><h3>Básica Primaria</h3><p>Fortalecemos conocimientos con metodologías activas que estimulan la autonomía, el razonamiento lógico y el trabajo en equipo.</p></div>
+            <div class="card reveal"><div class="card-icon">🧠</div><h3>Estimulación Temprana</h3><p>Actividades diseñadas para potenciar el desarrollo cognitivo, emocional y social de cada pequeño aventurero.</p></div>
+            <div class="card reveal"><div class="card-icon">❤️</div><h3>Acompañamiento Familiar</h3><p>Trabajamos junto a los padres para garantizar un proceso educativo sólido y amoroso en cada etapa del crecimiento.</p></div>
+        </div>
+    </section>
+
+    <!-- ===== PROGRAMAS ===== -->
+    <section class="programs-section" id="programas">
+        <h2 class="section-title reveal">🌱 Nuestro Diferencial</h2>
+        <div class="programs-container">
+            <div class="program-card reveal"><div class="program-icon pi-pink">🌱</div><div class="program-content"><h3>Aprendizaje Experiencial</h3><p>Actividades prácticas y lúdicas que convierten la educación en una aventura emocionante.</p></div></div>
+            <div class="program-card reveal"><div class="program-icon pi-teal">🎭</div><div class="program-content"><h3>Adaptabilidad Total</h3><p>Nos ajustamos a las necesidades de cada niño, respetando sus ritmos únicos de aprendizaje.</p></div></div>
+            <div class="program-card reveal"><div class="program-icon pi-yellow">🌟</div><div class="program-content"><h3>Formación Integral</h3><p>Desarrollamos habilidades académicas, emocionales y sociales para niños completos.</p></div></div>
+            <div class="program-card reveal"><div class="program-icon pi-purple">🛡️</div><div class="program-content"><h3>Ambiente Seguro</h3><p>Espacios diseñados para que los niños exploren, aprendan y crezcan con total confianza.</p></div></div>
+        </div>
+    </section>
+
+    <!-- ===== GALERÍA ===== -->
+    <section class="gallery-section" id="galeria">
+        <h2 class="section-title reveal">🖼️ Momentos de Alegría</h2>
+        <div class="gallery-container">
+            <div class="gallery-item reveal" data-type="image" data-src="img/galeria/galeria1.jpg"><img src="img/galeria/galeria1.jpg" alt="Niños en actividades lúdicas Centro de Estimulación NINA" loading="lazy"><div class="gallery-overlay"><h4>⭐ Nuestros Niños</h4><p>Momentos únicos llenos de alegría</p></div></div>
+            <div class="gallery-item reveal" data-type="image" data-src="img/galeria/galeria2.jpg"><img src="img/galeria/galeria2.jpg" alt="Actividades educativas y estimulación temprana Centro NINA" loading="lazy"><div class="gallery-overlay"><h4>🎨 Arte y Creatividad</h4><p>Pequeños artistas en acción</p></div></div>
+            <div class="gallery-item reveal" data-type="image" data-src="img/galeria/galeria3.jpg"><img src="img/galeria/galeria3.jpg" alt="Aprendizaje lúdico y desarrollo infantil Centro NINA Puerto Triunfo" loading="lazy"><div class="gallery-overlay"><h4>🎪 Aprendizaje Divertido</h4><p>Cada día es una aventura</p></div></div>
+            <div class="gallery-item reveal" data-type="image" data-src="img/galeria/galeria4.jpg"><img src="img/galeria/galeria4.jpg" alt="Actividades educativas y estimulación temprana Centro NINA" loading="lazy"><div class="gallery-overlay"><h4>🌟 Exploradores</h4><p>Curiosidad y aprendizaje sin límites</p></div></div>
+            <div class="gallery-item reveal" data-type="image" data-src="img/galeria/galeria5.jpg"><img src="img/galeria/galeria5.jpg" alt="Niños en actividades lúdicas Centro de Estimulación NINA" loading="lazy"><div class="gallery-overlay"><h4>🤝 Trabajo en Equipo</h4><p>Juntos aprendemos más</p></div></div>
+            <div class="gallery-item reveal" data-type="image" data-src="img/galeria/galeria6.jpg"><img src="img/galeria/galeria6.jpg" alt="Actividades educativas y estimulación temprana Centro NINA" loading="lazy"><div class="gallery-overlay"><h4>🎭 Expresión y Juego</h4><p>La imaginación no tiene fronteras</p></div></div>
+            <div class="gallery-item reveal" data-type="image" data-src="img/galeria/galeria7.jpg"><img src="img/galeria/galeria7.jpg" alt="Niños en actividades lúdicas Centro de Estimulación NINA" loading="lazy"><div class="gallery-overlay"><h4>💡 Mentes Brillantes</h4><p>Desarrollando el potencial de cada uno</p></div></div>
+            <div class="gallery-item reveal" data-type="image" data-src="img/galeria/galeria8.jpg"><img src="img/galeria/galeria8.jpg" alt="Actividades educativas y estimulación temprana Centro NINA" loading="lazy"><div class="gallery-overlay"><h4>❤️ Nuestra Familia NINA</h4><p>Un espacio de amor y aprendizaje</p></div></div>
+            <div class="gallery-item reveal" data-type="image" data-src="img/galeria/galeria9.jpg"><img src="img/galeria/galeria9.jpg" alt="Bebé explorando pintura sensorial en Centro NINA Puerto Triunfo" loading="lazy"><div class="gallery-overlay"><h4>🎨 Pintura Sensorial</h4><p>Explorando texturas y colores con todos los sentidos</p></div></div>
+            <div class="gallery-item reveal" data-type="image" data-src="img/galeria/galeria10.jpg"><img src="img/galeria/galeria10.jpg" alt="Niña dibujando y desarrollando habilidades artísticas en Centro NINA" loading="lazy"><div class="gallery-overlay"><h4>✏️ Arte y Expresión</h4><p>Pequeños artistas creando con marcadores y color</p></div></div>
+            <div class="gallery-item reveal" data-type="image" data-src="img/galeria/galeria11.jpg"><img src="img/galeria/galeria11.jpg" alt="Niño en sesión de estimulación con terapeuta en Centro NINA" loading="lazy"><div class="gallery-overlay"><h4>🧩 Estimulación Individual</h4><p>Acompañamiento personalizado para cada niño</p></div></div>
+            <div class="gallery-item reveal" data-type="image" data-src="img/galeria/galeria12.jpg"><img src="img/galeria/galeria12.jpg" alt="Niña orgullosa con corona de foami hecha a mano en Centro NINA" loading="lazy"><div class="gallery-overlay"><h4>👑 Manualidades con Amor</h4><p>Creatividad y motricidad fina en cada actividad</p></div></div>
+
+        </div>
+
+        <!-- VIDEOS — Coloca tus archivos en img/videos/ -->
+        <div class="gallery-container gallery-videos">
+            <div class="gallery-item video-item reveal" data-type="video" data-src="img/videos/video1.mp4">
+                <video class="gallery-video-preview" src="img/videos/video1.mp4" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="gallery-item video-item reveal" data-type="video" data-src="img/videos/video2.mp4">
+                <video class="gallery-video-preview" src="img/videos/video2.mp4" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="gallery-item video-item reveal" data-type="video" data-src="img/videos/video3.mp4">
+                <video class="gallery-video-preview" src="img/videos/video3.mp4" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="gallery-item video-item reveal" data-type="video" data-src="img/videos/video4.mp4">
+                <video class="gallery-video-preview" src="img/videos/video4.mp4" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="gallery-item video-item reveal" data-type="video" data-src="img/videos/video5.mp4">
+                <video class="gallery-video-preview" src="img/videos/video5.mp4" muted loop playsinline preload="none"></video>
+            </div>
+        </div>
+
+        <div class="instagram-cta reveal">
+            <p class="instagram-text">¿Quieres ver más fotos?</p>
+            <a href="https://www.instagram.com/ninacentroeducativo?igsh=ZXRhdHRlbzBwaGcy" target="_blank" class="instagram-link">
+                <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="6" r="1.5" fill="currentColor"/></svg>
+                <span>Visítanos en Instagram</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox">
+        <button class="lb-close" id="lbClose">✕</button>
+        <div class="lb-inner" id="lbInner"></div>
+    </div>
+
+    <!-- ===== TESTIMONIOS ===== -->
+    <section class="testimonials-section" id="testimonios">
+        <h2 class="section-title reveal">💬 Lo Que Dicen Las Familias</h2>
+        <div class="testimonials-container">
+            <div class="testimonials-slider">
+                <div class="testimonials-track" id="testimonialsTrack">
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-left">
+                            <img src="img/testimonios/testimonios1.jpg" alt="Cristian y Laura" class="testimonial-image">
+                            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="testimonial-right">
+                            <h3 class="testimonial-name">Cristian C. Oquendo & Laura J. Giraldo</h3>
+                            <span class="testimonial-role">Papás de María Antonia Oquendo (1 año) y Emily Sophia Ordóñez (10 años)</span>
+                            <p class="testimonial-text">&quot;Desde que nuestras hijas iniciaron este proceso, hemos visto avances muy bonitos en su seguridad, comunicación y forma de relacionarse. Llegan felices y motivadas, y eso nos da mucha tranquilidad como padres. Agradecemos al Centro de Estimulación y Aprendizaje <span class="nina-colored"><span style="color:#F7921E">N</span><span style="color:#9B5DE5">I</span><span style="color:#FF3EA0">N</span><span style="color:#8CE820">A</span></span> por el compromiso y el acompañamiento en cada paso del crecimiento de nuestras niñas. 💛&quot;</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-left">
+                            <img src="img/testimonios/testimonios2.png" alt="Cristian y Yuri" class="testimonial-image">
+                            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="testimonial-right">
+                            <h3 class="testimonial-name">Cristian C. Andrade Ciro & Yuri J. Ramírez Uneme</h3>
+                            <span class="testimonial-role">Papás de Mathias Andrade Ramírez (5 años)</span>
+                            <p class="testimonial-text">&quot;Ha sido una experiencia y un regalo porque nos damos cuenta que nuestro hijo llega a un espacio de confianza, donde ha fortalecido su lenguaje y habilidades. La estimulación es esencial para el desarrollo cerebral, ayuda a fomentar la creatividad y la imaginación. Nada nos motiva más que ver el progreso y avance de nuestro hijo. Mil gracias al Centro de Estimulación y Aprendizaje <span class="nina-colored"><span style="color:#F7921E">N</span><span style="color:#9B5DE5">I</span><span style="color:#FF3EA0">N</span><span style="color:#8CE820">A</span></span>, cada avance, por pequeño que parezca, es un gran paso hacia su bienestar. Gracias por permitirnos ser parte de esta familia. 🫶🙏&quot;</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-left">
+                            <img src="img/testimonios/testimonios3.png" alt="Stefany y Mateo" class="testimonial-image">
+                            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="testimonial-right">
+                            <h3 class="testimonial-name">Stefany Vera C. & Mateo Quiceno S.</h3>
+                            <span class="testimonial-role">Papás de Lucca Quiceno Vera (2 años)</span>
+                            <p class="testimonial-text">&quot;Como padres, nos llena de alegría ver cómo Lucca disfruta cada momento en el centro de estimulación. Desde que llega se muestra curioso, participa con entusiasmo y explora cada espacio preparado para su desarrollo. Hemos notado avances en su coordinación, equilibrio, lenguaje y creatividad gracias a las actividades sensoriales, psicomotoras y artísticas. Cada logro, por pequeño que sea, lo celebramos juntos. Más que un espacio de aprendizaje, para nosotros es un lugar donde Lucca fortalece sus habilidades mientras comparte experiencias llenas de amor y conexión en familia. 💛&quot;</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-left">
+                            <img src="img/testimonios/testimonios4.jpg" alt="Yesica Marín y Cristian Vasquez" class="testimonial-image">
+                            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="testimonial-right">
+                            <h3 class="testimonial-name">Yesica Marín y Cristian Vasquez</h3>
+                            <span class="testimonial-role">Papás de Jhoest Vázquez Marín</span>
+                            <p class="testimonial-text">&quot;Estamos muy felices y agradecidos de formar parte del Centro de Estimulación y Aprendizaje NINA; La increíble labor hace que sea notorio dentro del crecimiento de nuestro hijo Jhóest Vásquez Marín durante estos 2 años, no solo ha avanzado en lo educativo, sino que también se ha consolidado su independencia y seguridad. Nos encanta verlo tan arriesgado ante nuevos retos y con tanta confianza en sí mismo.
+¡Gracias por ser parte fundamental de este crecimiento y por potenciar su mejor versión de una manera agradable, divertida y cariñosa! 💛&quot;</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn" onclick="moveSlider(-1)">◀</button>
+                <div class="slider-dots" id="sliderDots"></div>
+                <button class="slider-btn" onclick="moveSlider(1)">▶</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== UBICACIÓN ===== -->
+    <section class="map-section" id="ubicacion">
+        <h2 class="section-title reveal">📍 Encuéntranos Aquí</h2>
+        <div class="map-container reveal">
+            <div class="map-info">
+                <h3>Visítanos en Nuestra Sede Principal</h3>
+                <div class="info-item"><div class="info-icon">📍</div><div class="info-content"><h4>Dirección</h4><p>Carrera 15a # 10-11 Barrio Obrero<br>Puerto Triunfo, Antioquia</p></div></div>
+                <div class="info-item"><div class="info-icon">🕐</div><div class="info-content"><h4>Horario de Atención</h4><p>Lunes a Viernes: 8:00 AM - 11:00 AM y de<br>12:00 PM - 6:00 PM</p></div></div>
+                <div class="info-item"><div class="info-icon">📞</div><div class="info-content"><h4>Teléfono</h4><p>📱 320 639 8235<br>💬 WhatsApp disponible</p></div></div>
+                <div class="info-item"><div class="info-icon">✉️</div><div class="info-content"><h4>Correo Electrónico</h4><p>centroestimulacionnina@gmail.com</p></div></div>
+                <a href="https://maps.google.com/?q=Carrera+15a+10-11+Barrio+Obrero+Puerto+Triunfo+Antioquia" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">🗺️ Cómo Llegar</a>
+            </div>
+            <div class="map-frame-container">
+                <div class="map-decoration"></div>
+                <div class="map-decoration-2"></div>
+                <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0!2d-74.5627!3d5.8752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPuerto+Triunfo%2C+Antioquia!5e0!3m2!1ses!2sco!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="contact-section" id="contacto">
+        <div class="contact-container">
+            <h2 class="section-title" style="color: white; margin-bottom: 2rem;">🚀 ¡Inicia la Aventura!</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group"><input type="text"  id="name"    name="name"    placeholder=" " required><label for="name">👤 Nombre del pequeño aventurero</label></div>
+                <div class="form-group"><input type="email" id="email"   name="email"   placeholder=" " required><label for="email">📧 Correo de los papás</label></div>
+                <div class="form-group"><input type="tel"   id="phone"   name="phone"   placeholder=" "><label for="phone">📱 Teléfono</label></div>
+                <div class="form-group"><textarea id="message" name="message" rows="4" placeholder=" " required></textarea><label for="message">💭 Cuéntanos sobre tu pequeño</label></div>
+                <button type="submit" class="submit-btn" id="submitBtn">🌟 ¡Enviar Mensaje Mágico!</button>
+                <div class="form-status" id="formStatus"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== JUEGOS ===== -->
+    <section class="games-section" id="juego">
+        <div class="games-header reveal">
+            <h2 class="games-title"><span>🎮</span> Zona de Juegos <span>🧩</span></h2>
+            <p class="games-subtitle">¡Aprende jugando con nuestros juegos educativos interactivos!</p>
+        </div>
+
+        <!-- GAME SELECTION CARDS -->
+        <div class="game-cards-grid reveal">
+            <div class="game-card" onclick="openGame('memory')">
+                <div class="game-card-icon">🧠</div>
+                <h3 class="game-card-title">Memoria <span class="nina-colored"><span style="color:#F7921E">N</span><span style="color:#9B5DE5">I</span><span style="color:#FF3EA0">N</span><span style="color:#8CE820">A</span></span></h3>
+                <p class="game-card-desc">Encuentra los pares de emojis educativos. ¡Entrena tu memoria y concentración!</p>
+                <div class="game-card-badges"><span class="badge">⏱️ Tiempo</span><span class="badge">🎯 Pares</span></div>
+                <button class="game-card-btn">▶️ ¡Jugar!</button>
+            </div>
+            <div class="game-card" onclick="openGame('catch')">
+                <div class="game-card-icon">🍎</div>
+                <h3 class="game-card-title">Atrapa la Fruta</h3>
+                <p class="game-card-desc">Mueve la cesta y atrapa frutas y libros. ¡Evita bombas y chiles! Los ❤️ dan vidas extra.</p>
+                <div class="game-card-badges"><span class="badge">🏆 Puntos</span><span class="badge">❤️ Vidas</span><span class="badge">⭐ Niveles</span></div>
+                <button class="game-card-btn">▶️ ¡Jugar!</button>
+            </div>
+            <div class="game-card" onclick="openGame('rocket')">
+                <div class="game-card-icon">🚀</div>
+                <h3 class="game-card-title">Matemáticas Cohete</h3>
+                <p class="game-card-desc">Resuelve sumas y restas antes de que se acabe el tiempo. ¡5 vidas y combos épicos!</p>
+                <div class="game-card-badges"><span class="badge">🔥 Combos</span><span class="badge">🚀 5 Vidas</span><span class="badge">⭐ Niveles</span></div>
+                <button class="game-card-btn">▶️ ¡Jugar!</button>
+            </div>
+            <div class="game-card" onclick="openGame('simon')">
+                <div class="game-card-icon">🎵</div>
+                <h3 class="game-card-title">Secuencias</h3>
+                <p class="game-card-desc">¡Memoriza y repite la secuencia de colores! Cada ronda se vuelve más difícil. ¿Hasta qué nivel llegas?</p>
+                <div class="game-card-badges"><span class="badge">🎵 Sonidos</span><span class="badge">🧠 Memoria</span><span class="badge">⭐ Niveles</span></div>
+                <button class="game-card-btn">▶️ ¡Jugar!</button>
+            </div>
+        </div>
+
+        <!-- ACTIVE GAME AREA -->
+
+        <!-- FULLSCREEN GAME MODAL -->
+        <div class="game-modal" id="gameModal">
+            <button class="game-modal-close" onclick="closeGame()" title="Cerrar">✕</button>
+            <div class="game-modal-body">
+            <div class="game-container">
+
+                <!-- MEMORY PANEL -->
+                <div class="game-panel" id="memoryPanel">
+                    <div class="memory-level-selector">
+                        <button class="mem-lvl-btn active" data-lvl="1" onclick="setMemoryLevel(1)">⭐ Fácil</button>
+                        <button class="mem-lvl-btn" data-lvl="2" onclick="setMemoryLevel(2)">⭐⭐ Medio</button>
+                        <button class="mem-lvl-btn" data-lvl="3" onclick="setMemoryLevel(3)">⭐⭐⭐ Difícil</button>
+                    </div>
+                    <div class="memory-stats">
+                        <span class="stat-badge">⏱️ <span id="memoryTimer">00:00</span></span>
+                        <span class="stat-badge">🎯 <span id="memoryMoves">0</span> movimientos</span>
+                        <span class="stat-badge">💎 <span id="memoryPairs">0</span>/<span id="memoryTotalPairs">6</span> pares</span>
+                    </div>
+                    <div class="memory-board-wrapper"><div class="memory-board lvl-1" id="memoryBoard"></div></div>
+                    <div class="memory-victory-banner" id="memoryVictory"></div>
+                    <div class="game-controls"><button class="game-btn game-btn-primary" onclick="restartMemory()">🔄 Reiniciar</button></div>
+                </div>
+
+                <!-- CATCH PANEL -->
+                <div class="game-panel" id="catchPanel">
+                    <div class="catch-stats"><span>🏆 <span id="catchScore">0</span></span><span>❤️ <span id="catchLives">3/5</span></span><span>⭐ Nivel <span id="catchLevel">1</span></span></div>
+                    <div class="catch-game-area" id="catchGameArea">
+                        <div class="game-message" id="catchMessage">
+                            <h3>🍎 ¡Atrapa frutas y libros!</h3>
+                            <p>Evita 💣 bombas y 🌶️ chiles<br>¡Los ❤️ corazones dan vidas!</p>
+                            <button class="game-btn game-btn-primary" onclick="startCatchGame()">▶️ Jugar</button>
+                        </div>
+                        <div class="catch-basket" id="catchBasket"></div>
+                    </div>
+                    <div class="game-controls">
+                        <button class="game-btn game-btn-secondary" onclick="stopCatchGame()">⏹️ Detener</button>
+                        <button class="game-btn game-btn-primary"   onclick="startCatchGame()">🔄 Reiniciar</button>
+                    </div>
+                </div>
+
+                <!-- ROCKET PANEL -->
+                <div class="game-panel" id="rocketPanel">
+                    <div class="rocket-stats">
+                        <span class="rocket-stat score">🏆 <span id="rocketScore">0</span></span>
+                        <span class="rocket-stat lives">❤️ <span class="lives-display" id="livesDisplay">
+                            <span class="life-icon">🚀</span><span class="life-icon">🚀</span>
+                            <span class="life-icon">🚀</span><span class="life-icon">🚀</span><span class="life-icon">🚀</span>
+                        </span></span>
+                        <span class="rocket-stat streak">🔥 <span id="rocketStreak">0</span></span>
+                        <span class="rocket-stat level">⭐ Nivel <span id="rocketLevel">1</span></span>
+                    </div>
+                    <div class="rocket-game-area" id="rocketGameArea">
+                        <div class="rocket-stars" id="starField"></div>
+                        <div class="nebula" id="nebula1" style="width:200px;height:200px;background:#4a0080;top:10%;left:5%;"></div>
+                        <div class="nebula" id="nebula2" style="width:150px;height:150px;background:#003080;top:40%;right:8%;"></div>
+                        <div class="screen-flash" id="screenFlash"></div>
+                        <div class="level-up-banner" id="levelUpBanner">🚀 ¡NIVEL SUPERIOR! ⭐</div>
+                        <div class="timer-bar-wrap"><div class="timer-bar" id="timerBar" style="width:100%;"></div></div>
+                        <div class="math-problem" id="mathProblem"><div class="math-problem-text" id="problemText">5 + 3 = ?</div></div>
+                        <div class="combo-text" id="comboText">¡COMBO x3! 🔥</div>
+                        <div class="rocket-container" id="rocket">🚀</div>
+                        <div class="answer-buttons" id="answerButtons"></div>
+                        <div class="game-message" id="rocketMessage">
+                            <h3>🚀 ¡Matemáticas con el Cohete!</h3>
+                            <p>Responde antes de que se acabe el tiempo<br>🚀 Tienes 5 vidas<br>🔥 ¡Combo por rachas!</p>
+                            <button class="game-btn game-btn-primary" onclick="startRocketGame()">▶️ ¡Despegar!</button>
+                        </div>
+                    </div>
+                    <div class="game-controls">
+                        <button class="game-btn game-btn-secondary" onclick="stopRocketGame()">⏹️ Aterrizar</button>
+                        <button class="game-btn game-btn-primary"   onclick="startRocketGame()">🔄 Nuevo vuelo</button>
+                    </div>
+                </div>
+
+                <!-- SIMON PANEL -->
+                <div class="game-panel" id="simonPanel">
+                    <div class="simon-stats">
+                        <span class="stat-badge simon-stat-badge">🎯 <span id="simonLevel">Nivel 1</span></span>
+                        <span class="stat-badge simon-stat-badge">⭐ <span id="simonScore">0</span> pts</span>
+                        <span class="stat-badge simon-stat-badge" id="simonStreakBadge">🔥 Racha: <span id="simonStreak">0</span></span>
+                    </div>
+                    <div class="simon-board" id="simonBoard">
+                        <div class="simon-btn simon-btn-0" data-color="0" data-sound="262"></div>
+                        <div class="simon-btn simon-btn-1" data-color="1" data-sound="330"></div>
+                        <div class="simon-btn simon-btn-2" data-color="2" data-sound="392"></div>
+                        <div class="simon-btn simon-btn-3" data-color="3" data-sound="523"></div>
+                        <div class="simon-center">
+                            <div class="simon-center-icon" id="simonCenterIcon">🎵</div>
+                            <div class="simon-step-display" id="simonStepDisplay"></div>
+                        </div>
+                    </div>
+                    <p class="simon-message" id="simonMessage">Pulsa ▶️ para empezar</p>
+                    <div class="game-controls">
+                        <button class="game-btn game-btn-primary"   id="simonStartBtn" onclick="startSimon()">▶️ Comenzar</button>
+                        <button class="game-btn game-btn-secondary" onclick="stopSimon()">⏹️ Detener</button>
+                    </div>
+                </div>
+
+            </div><!-- .game-container -->
+            </div><!-- .game-modal-body -->
+            <!-- Botones para cambiar de juego (debajo del juego, al hacer scroll) -->
+            <div class="game-modal-switcher">
+                <p class="gms-label">🎮 Explorar más juegos</p>
+                <div class="gms-row">
+                    <button class="gms-btn" id="tab-memory" onclick="switchGameTab('memory')" title="Memoria">🧠 Memoria</button>
+                    <button class="gms-btn" id="tab-catch"  onclick="switchGameTab('catch')"  title="Atrapa la Fruta">🍎 Atrapa la Fruta</button>
+                    <button class="gms-btn" id="tab-rocket" onclick="switchGameTab('rocket')" title="Matemáticas Cohete">🚀 Cohete Matemático</button>
+                    <button class="gms-btn" id="tab-simon"  onclick="switchGameTab('simon')"  title="Secuencias">🎵 Secuencias Simon</button>
+                </div>
+            </div>
+        </div><!-- #gameModal -->
+    </section>
+
+    <!-- GAME OVERLAY -->
+    <div class="game-overlay" id="gameOverlay">
+        <div class="overlay-box">
+            <button class="overlay-close" onclick="closeOverlay()">×</button>
+            <div class="overlay-icon" id="overlayIcon">🏆</div>
+            <h3 class="overlay-title" id="overlayTitle">¡Felicidades!</h3>
+            <p id="overlayMessage"></p>
+            <div id="overlayStats"></div>
+            <button class="game-btn game-btn-primary" onclick="closeOverlay(); restartCurrentGame();" style="margin-top: 1rem;">🎮 Jugar de nuevo</button>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img class="img-logo-footer" src="img/logo.png" alt="Centro NINA">
+                <h3>Centro de Estimulación y Aprendizaje</h3>
+            </div>
+            <p>Donde cada niño descubre su magia interior</p>
+            <div class="social-links">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/1BywKAPbmH/" target="_blank" class="social-btn social-btn-fb" title="Facebook">
+                    <svg viewBox="0 0 24 24" fill="white"><path d="M22 12C22 6.477 17.523 2 12 2S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/573206398235?text=¡Hola!%20Quiero%20información%20sobre%20inscripciones%20en%20Centro%20Educativo%20Nina" target="_blank" class="social-btn social-btn-wa" title="WhatsApp">
+                    <svg viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.42A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm4.92 13.3c-.207.583-1.215 1.116-1.67 1.17-.426.05-.964.07-1.554-.098a14.26 14.26 0 01-1.406-.52c-2.476-1.07-4.096-3.57-4.22-3.735-.122-.165-.997-1.326-.997-2.528s.63-1.793.855-2.037c.224-.244.488-.305.65-.305l.468.009c.15.007.352-.057.55.42.207.496.703 1.717.765 1.84.062.122.103.265.02.427-.08.163-.122.264-.244.407-.12.143-.254.32-.362.43-.12.12-.245.25-.105.49.14.24.622.998 1.334 1.617.916.812 1.688 1.063 1.928 1.183.24.12.38.1.52-.06.14-.162.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.147 1.16z"/></svg>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/ninacentroeducativo?igsh=ZXRhdHRlbzBwaGcy" target="_blank" class="social-btn social-btn-ig" title="Instagram">
+                    <svg viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Centro de Estimulación y Aprendizaje <span class="nina-colored"><span style="color:#F7921E">N</span><span style="color:#9B5DE5">I</span><span style="color:#FF3EA0">N</span><span style="color:#8CE820">A</span></span>. Todos los derechos reservados.</p>
+                <p><a href="#inicio">Inicio</a> | <a href="#nosotros">Nosotros</a> | <a href="#contacto">Contacto</a></p>
+                <p class="footer-dev">
+                    Diseñado y desarrollado por
+                    <a href="https://www.instagram.com/jonathan_osorioarcila?igsh=MThzaDRzZzl1ZmJlcQ==" target="_blank" rel="noopener">
+                        <svg class="footer-dev-ig" viewBox="0 0 24 24" fill="none">
+                            <defs><linearGradient id="igGrad" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#fcb045"/><stop offset="50%" style="stop-color:#fd1d1d"/><stop offset="100%" style="stop-color:#833ab4"/></linearGradient></defs>
+                            <rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#igGrad)" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="4" stroke="url(#igGrad)" stroke-width="2"/>
+                            <circle cx="18" cy="6" r="1.5" fill="url(#igGrad)"/>
+                        </svg>
+                        Jonatan Osorio Arcila
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/573206398235?text=¡Hola!%20Quiero%20información%20sobre%20inscripciones%20en%20Centro%20Educativo%20Nina" class="whatsapp-float" target="_blank" aria-label="Contactar Centro NINA por WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32" fill="white"><path d="M24 4C13 4 4 13 4 24c0 3.6 1 7 2.7 9.9L4 44l10.4-2.7C17.1 43 20.5 44 24 44c11 0 20-9 20-20S35 4 24 4zm0 36c-3.1 0-6.1-.8-8.7-2.4l-.6-.4-6.2 1.6 1.6-6-.4-.6C8.8 30.1 8 27.1 8 24 8 15.2 15.2 8 24 8s16 7.2 16 16-7.2 16-16 16zm8.8-11.9c-.5-.2-2.8-1.4-3.2-1.5-.4-.2-.7-.2-1 .2-.3.5-1.2 1.5-1.5 1.8-.3.3-.5.4-1 .1-.5-.2-2-.7-3.8-2.3-1.4-1.2-2.3-2.8-2.6-3.2-.3-.5 0-.7.2-1l.7-.8c.2-.3.3-.5.4-.8.1-.3 0-.6-.1-.8-.1-.2-1-2.4-1.4-3.3-.4-.9-.8-.7-1-.7h-.9c-.3 0-.8.1-1.2.6-.4.5-1.6 1.6-1.6 3.8s1.7 4.4 1.9 4.7c.2.3 3.3 5 7.9 7 1.1.5 2 .8 2.7 1 1.1.3 2.1.3 2.9.2.9-.1 2.8-1.1 3.2-2.2.4-1.1.4-2 .3-2.2-.2-.2-.5-.3-1-.5z"/></svg>
+        <span class="whatsapp-tooltip">¡Escríbenos!</span>
+    </a>
+
+    <!-- ===== JS — ORDER MATTERS ===== -->
+    <!-- 1. Game Manager (shared functions) -->
+    <script src="js/games/manager.js"></script>
+    <!-- 2. Individual games -->
+    <script src="js/games/memory.js"></script>
+    <script src="js/games/catch.js"></script>
+    <script src="js/games/rocket.js"></script>
+    <script src="js/games/simon.js"></script>
+    <!-- 3. UI modules -->
+    <script src="js/slider.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/lightbox.js"></script>
+    <!-- 4. Core (last, reads DOM that all above have created) -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

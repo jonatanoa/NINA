@@ -1,0 +1,65 @@
+.hero {
+    min-height: 100vh; display: flex; align-items: center;
+    justify-content: center; padding: 8rem 5% 5rem; position: relative;
+}
+
+.hero-content {
+    max-width: 1400px; width: 100%;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 4rem; align-items: center;
+}
+
+.hero-text h1 { font-family: 'Fredoka', sans-serif; font-size: 3.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 1.5rem; min-height: 4.2rem; }
+
+.typing-container { display: inline-block; position: relative; }
+
+.typing-text {
+    background: linear-gradient(135deg, var(--primary), var(--orange));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    border-right: 4px solid var(--primary); animation: blink 0.7s infinite; padding-right: 5px;
+}
+@keyframes blink { 0%, 100% { border-color: transparent; } 50% { border-color: var(--primary); } }
+
+.hero-text p { font-size: 1.2rem; color: #666; margin-bottom: 2rem; line-height: 1.6; opacity: 0; animation: fadeInUp 0.8s 0.5s forwards; }
+
+.hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; opacity: 0; animation: fadeInUp 0.8s 0.7s forwards; }
+
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+.btn {
+    padding: 1rem 2rem; border: none; border-radius: 50px;
+    font-family: 'Fredoka', sans-serif; font-size: 1.1rem; font-weight: 600;
+    cursor: pointer; position: relative; overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; z-index: 1;
+}
+.btn-primary { background: linear-gradient(135deg, var(--primary), var(--purple)); color: white; box-shadow: 0 10px 30px rgba(255, 107, 157, 0.4); }
+.btn-secondary { background: white; color: var(--primary); border: 3px solid var(--primary); }
+.btn::before { content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0; border-radius: 50%; background: rgba(255,255,255,0.3); transform: translate(-50%, -50%); transition: width 0.6s, height 0.6s; z-index: -1; }
+.btn:hover::before { width: 300px; height: 300px; }
+.btn:hover { transform: translateY(-5px) scale(1.05); box-shadow: 0 15px 40px rgba(0,0,0,0.2); }
+.btn:active { transform: translateY(-2px) scale(0.98); }
+
+.hero-image {
+    position: relative; opacity: 0; animation: fadeInUp 1s 0.3s forwards;
+    border-radius: 30px; overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.18);
+    height: 680px; max-width: 600px; width: 100%; flex-shrink: 0;
+}
+.hero-slider { position: relative; width: 100%; height: 100%; }
+.hero-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.9s ease; z-index: 0; will-change: opacity; }
+.hero-slide.active { opacity: 1; z-index: 1; }
+.hero-slide img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; transform: scale(1.08); animation: none; transition: transform 6s ease; }
+.hero-slide.active img { transform: scale(1); }
+.hero-slide::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,107,157,0.15) 0%, transparent 50%, rgba(155,93,229,0.1) 100%); z-index: 1; pointer-events: none; }
+.hero-dots { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 5; }
+.hero-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55); border: none; padding: 0; min-width: 8px; }
+.hero-dot.active { background: white; transform: scale(1.4); }
+.hero-arrow { position: absolute; top: 50%; transform: translateY(-50%); z-index: 5; width: 40px; height: 40px; background: rgba(255,255,255,0.85); border: none; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.15); opacity: 0; }
+.hero-image:hover .hero-arrow { opacity: 1; }
+.hero-arrow:hover { background: var(--primary); color: white; transform: translateY(-50%) scale(1.1); }
+.hero-arrow-prev { left: 12px; }
+.hero-arrow-next { right: 12px; }
+.sparkle { position: absolute; width: 20px; height: 20px; background: var(--accent); clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); animation: sparkle 2s infinite; pointer-events: none; z-index: 6; }
+@keyframes sparkle { 0%, 100% { opacity: 0; transform: scale(0) rotate(0deg); } 50% { opacity: 1; transform: scale(1) rotate(180deg); } }
+
