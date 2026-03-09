@@ -157,3 +157,32 @@ typeEffect();
         videoObserver.observe(item);
     });
 })();
+
+
+// ── LOADER — ocultar cuando la página está completamente lista ──
+(function () {
+    const loader = document.getElementById('page-loader');
+    if (!loader) return;
+
+    function hideLoader() {
+        loader.classList.add('hidden');
+        // Eliminar del DOM tras el fade para no ocupar memoria
+        loader.addEventListener('transitionend', function () {
+            loader.remove();
+        }, { once: true });
+    }
+
+    // window.load espera imágenes, videos (poster), iframes — todo
+    if (document.readyState === 'complete') {
+        // Ya cargó (raro pero posible con caché)
+        setTimeout(hideLoader, 300);
+    } else {
+        window.addEventListener('load', function () {
+            // Pequeño delay mínimo para que la animación no sea imperceptible
+            setTimeout(hideLoader, 500);
+        });
+    }
+
+    // Safety net: si algo falla y load no dispara en 8s, ocultar igual
+    setTimeout(hideLoader, 8000);
+})();

@@ -27,3 +27,109 @@ body {
     line-height: 1.6;
 }
 
+
+
+/* ═══════════════════════════════════════════════
+   PANTALLA DE CARGA (LOADER)
+   ═══════════════════════════════════════════════ */
+
+#page-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#page-loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Logo completo — sin recorte circular */
+.loader-logo {
+    width: clamp(140px, 40vw, 220px);
+    height: auto;
+    object-fit: contain;
+    animation: loaderPulse 1.8s ease-in-out infinite;
+    filter: drop-shadow(0 0 0px rgba(255,107,157,0));
+}
+
+@keyframes loaderPulse {
+    0%   { transform: scale(1);    filter: drop-shadow(0  0px  0px rgba(255,107,157,0.0)); }
+    50%  { transform: scale(1.04); filter: drop-shadow(0  8px 22px rgba(255,107,157,0.4)); }
+    100% { transform: scale(1);    filter: drop-shadow(0  0px  0px rgba(255,107,157,0.0)); }
+}
+
+/* Nombre del centro */
+.loader-title {
+    font-family: 'Nunito', 'Segoe UI', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #555;
+    letter-spacing: 0.04em;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.loader-title span {
+    background: linear-gradient(135deg, #FF6B9D, #9B5DE5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Puntos rebotando — colores de las secciones de NINA */
+.loader-dots {
+    display: flex;
+    gap: 0.55rem;
+    align-items: center;
+}
+
+.loader-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    animation: loaderBounce 1.2s ease-in-out infinite;
+}
+
+.loader-dot:nth-child(1) { background: #FFB3D1; animation-delay: 0s;    }
+.loader-dot:nth-child(2) { background: #FFD49A; animation-delay: 0.15s; }
+.loader-dot:nth-child(3) { background: #A8EDCC; animation-delay: 0.3s;  }
+.loader-dot:nth-child(4) { background: #C9B8FF; animation-delay: 0.45s; }
+.loader-dot:nth-child(5) { background: #A8D8FF; animation-delay: 0.6s;  }
+
+@keyframes loaderBounce {
+    0%, 80%, 100% { transform: translateY(0);    opacity: 0.6; }
+    40%           { transform: translateY(-14px); opacity: 1;   }
+}
+
+/* Responsive del loader */
+@media (max-width: 480px) {
+    #page-loader { gap: 1.4rem; }
+    .loader-logo { width: clamp(100px, 45vw, 160px); }
+    .loader-title { font-size: 0.95rem; }
+    .loader-dot { width: 10px; height: 10px; }
+}
+
+@media (max-width: 360px) {
+    #page-loader { gap: 1.1rem; }
+    .loader-logo { width: clamp(80px, 42vw, 130px); }
+    .loader-title { font-size: 0.85rem; }
+    .loader-dot { width: 8px; height: 8px; }
+    .loader-dots { gap: 0.4rem; }
+}
+
+/* Landscape en móvil */
+@media (max-height: 500px) {
+    #page-loader { gap: 0.8rem; flex-direction: row; flex-wrap: wrap; justify-content: center; }
+    .loader-logo { width: clamp(50px, 12vh, 80px); }
+    .loader-title { font-size: 0.85rem; flex-basis: 100%; margin: 0; }
+    .loader-dots { flex-basis: 100%; justify-content: center; }
+}
